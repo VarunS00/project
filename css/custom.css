@@ -39,3 +39,15 @@ a.plain-link:hover,
 a.plain-link:active {
 color: #ffffff !important;
 }
+
+.resume-link {
+  font-size: 30px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
