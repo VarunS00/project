@@ -32,3 +32,10 @@
   display: none;
   color: #007bff;
 }
+
+a.plain-link,
+a.plain-link:visited,
+a.plain-link:hover,
+a.plain-link:active {
+color: #ffffff !important;
+}
