@@ -38,6 +38,7 @@ a.plain-link:visited,
 a.plain-link:hover,
 a.plain-link:active {
 color: #ffffff !important;
+text-decoration: underline !important;
 }
 
 .resume-link {

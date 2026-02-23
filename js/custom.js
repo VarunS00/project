@@ -235,12 +235,21 @@
     // Create the gallery
     // In practice, these images urls may come from your server via http ajax requests.
     var $gallery = $("#gallery");
+
+    var item = '<a href="files/Varun_Resume.pdf" download class="flex-column">' +
+    '<img src="images/resume-preview.png" class="center-image">' +
+    '<div></div>' +
+    '</a>';
+
+    $gallery.append($(item));
+
+    var $$gallery = $("#gallery");
     for (var i = 0; i < 8; i++) {
       var item = '<a href="javascript:void(0)" class="flex-column">' +
         '<img src="img/dummay-img.png">' +
         '<div>Image Caption</div>' +
         '</a>';
-      $gallery.append($(item));
+      $$gallery.append($(item));
     }
 
     // Create custom tabs
