@@ -236,9 +236,9 @@
     // In practice, these images urls may come from your server via http ajax requests.
     var $gallery = $("#gallery");
 
-    var item = '<a href="files/Varun_Resume.pdf" download class="flex-column">' +
-    '<img src="images/resume-preview.png" class="center-image">' +
-    '<div></div>' +
+    var item = '<a class="flex-column">' +
+    '<img src="img/PopulationPyramid.png" class="center-image">' +
+    '<div><h6>Ping Project <div><h6>The goal of this project is to analyze a developing country of the world and provide quantitative and qualitative data about it</div>' +
     '</a>';
 
     $gallery.append($(item));
