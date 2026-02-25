@@ -236,22 +236,45 @@
     // In practice, these images urls may come from your server via http ajax requests.
     var $gallery = $("#gallery");
 
-    var item = '<a class="flex-column">' +
-    '<img src="img/PopulationPyramid.png" class="center-image">' +
-    '<div><h6>Ping Project <div><h6>The goal of this project is to analyze a developing country of the world and provide quantitative and qualitative data about it</div>' +
-    '</a>';
+    var item1 = 
+  '<div class="project-card">' +                     // width-limited wrapper
+    '<a class="flex-column">' +
+      '<img src="img/ActualPyramid.png" class="center-image">' +
+      '<div>' +
+        '<h1>PING Project</h1>' +
+        '<h6>The goal of this project is to analyze a developing country of the world and provide quantitative and qualitative data about it. Analyzing the physical and cultural characteristics of the country are the main parts of the project. Personally, I analyzed the country of Bangladesh. I used Google.</h6>' +
+        '<a href="https://docs.google.com/document/d/1cxWaRLiVOzDFqdxRmjPuArwr5ZEeqo2XkEZb8zNrMYE/edit?tab=t.0" target="_blank" class="project-link">Click here to view the full project</a>' +
+      '</div>' +
+    '</a>' +
+  '</div>';
+    var item2 =
+  '<div class="project-card">' +
+    '<a class="flex-column">' +
+      '<img src="img/Crystal.png" class="project-image">' +
+      '<div>' +
+        '<h1>Collaborative Creative Task</h1>' +
+        '<h6> A creative design and drawing of anything by using CMU CS Academy to code the image. It is a collaborative project designed to help communicate with others and show off your coding.I created a cave with a spotlight focused on a crystal. I used Python.</h6>' +
+        '<a href="https://academy.cs.cmu.edu/sharing/ghostWhiteFly173575" target="_blank" class="project-link">Click here to view the points in my project.</a>' +
+      '</div>' +
+    '</a>' +
+  '</div>';
 
-    $gallery.append($(item));
+  var item3 =
+  '<div class="project-card">' +
+    '<a class="flex-column">' +
+      '<img src="img/FlameTest.png" class="project-image-3">' +
+      '<div>' +
+        '<h1>Chemistry Club-Flame Test</h1>' +
+        '<h6>The objective of this project is to produce flames of varying colors.I burned different elements and chemicals to create these colors. As the excited electrons from burning of the chemicals return to their normal energy levels, they release energy of light at a specific wavelength, producing different colors. I used Google.</h6>' +
+        '<a href="https://docs.google.com/presentation/d/1f59hG0-D1YamDQX_3hMwyaUUc5ODBY7Z7GXTRiJ8ANk/edit?slide=id.g3ca9496ece0_0_218#slide=id.g3ca9496ece0_0_218" target="_blank" class="project-link">Click here to view the full presentation.</a>' +
+      '</div>' +
+    '</a>' +
+  '</div>';
 
-    var $$gallery = $("#gallery");
-    for (var i = 0; i < 8; i++) {
-      var item = '<a href="javascript:void(0)" class="flex-column">' +
-        '<img src="img/dummay-img.png">' +
-        '<div>Image Caption</div>' +
-        '</a>';
-      $$gallery.append($(item));
-    }
+    $("#gallery").append(item1, item2, item3);
 
+
+    
     // Create custom tabs
     widgets.createCustomTab({
       selector: "#custom-tab"
